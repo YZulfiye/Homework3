@@ -14,7 +14,7 @@
 	git branch SQL
 	git branch Charles
 	git branch Mobile testing
-2) Запушить всі гілки на зовнішній репозиторій
+2) Запушити всі гілки на зовнішній репозиторій
 	git push --all
 3) У гілці Bag_Reports створити текстовый документ зі структурою баг репорта
 	git checkout Bag_Reports
