@@ -1,0 +1,61 @@
+1) На локальному репозиторії створити гілки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+	-cd Homework3 (відкриваємо репозиторій)
+	git branch Postman
+	git branch Jmeter
+	git branch CheckLists
+	git branch Bag Reports
+	git branch SQL
+	git branch Charles
+	git branch Mobile testing
+2) Запушить всі гілки на зовнішній репозиторій
+	git push --all
+3) У гілці Bag_Reports створити текстовый документ зі структурою баг репорта
+	git checkout Bag_Reports
+	touch br.txt
+	vim br.txt
+	Структура баг репорта:
+1. Summary - короткий опис проблеми і тип проблемної ситуації.
+2. Project - назва проекту, який тестується.
+3. Component - назва тестуючого компоненту.
+4. Version - версія, на якій було знайдено помилку.
+5. Severity - серйозність (Blocker, Critical, Major, Minor, Trivial).
+6. Priority - пріоритет (High, Medium, Low).
+7. Status - статус бага.
+8. Author - автор звіту про баг.
+9. Environment - інформація про оточення, на якому виявлено баг.
+10. Steps to reproduce - кроки відтворення багу.
+11. Actual Result - актуальний результат.
+12. Expected Result - очікуваний результат.
+13. Attachment - фйл, скрін відтворення помилки.	
+4) Запушити структуру багрепорта на завнішній репозиторій
+	git add .
+	git commit -m "br.txt"
+	git push --set-upstream origin Bag_Reports
+5) Вмержити гілку Bag_Reports в Main
+	git checkout main (переходимо на ту гілку, в яку будемо мержити)
+	git merge Bag_Reports
+6) Запушити main на зовнішній репозиторій.
+	git push --set-upstream origin main
+7) У гілці CheckLists накидати структуру чек листа.
+	git checkout CheckLists
+	touch ChL.txt
+	vim ChL.txt
+		Структура чек-листа:
+	1. Перевірка (Case) - перелік перевірок
+	2. Результат (Passed or Failed)
+	3. Коментарі - якась додаткова інформація
+8) Запушити структуру на зовнішній репозиторій
+	git push --set-upstream origin CheckLists
+9) На зовнішньому репозиторії зробити Pull Request гілки CheckLists у main
+	Create Pull Request
+10) Синхронізувати зовнішні і локальні гілки Main
+	git pull
+
+
