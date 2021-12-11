@@ -34,7 +34,7 @@
 11. Actual Result - актуальний результат.
 12. Expected Result - очікуваний результат.
 13. Attachment - фйл, скрін відтворення помилки.	
-4) Запушити структуру багрепорта на завнішній репозиторій
+4) Запушити структуру багрепорта на зовнішній репозиторій
 	git add .
 	git commit -m "br.txt"
 	git push --set-upstream origin Bag_Reports
